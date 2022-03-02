@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
+
+@media all and (min-width:1000px){
+  .glass{
+    min-width: fit-content;
+    min-height: fit-content;
+  }
+}
+
+
+body {
+    background-image: url("Background/TheCrossjpg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* linear-gradient(
+    140deg
+    ,#EADEDB 0%, #f13838 50%, #BFD641 75%) */;
+    margin: 0;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .container{
+    max-width: 600px;
+    min-height: 900px;
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    background:rgba(255, 255, 255,0.1);
+    border: solid 10px #a39f9f;
+    color: white;
+    border-radius: 30px;
+    opacity: 0.95;
+    box-shadow: rgba(37, 37, 37, 0.4) 0px 2px 50px 0px, rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
+  }
+
+  .container:hover{
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 50px 0px, rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
+    transition: 0.5s;
+  }
+
+  .container .block{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.glass{
+    border-radius: 20px;
+    background:rgba(255, 255, 255,0.1);
+    border: solid 0.6px #a39f9f;
+    min-width: 595px;
+    min-height: 740px;
+    margin-top: 300px;
+    margin-bottom: 20px;
+    margin-right: -515px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .glass:hover{
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 300px 0px, rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
+    border: solid 10px #a39f9f;
+    transition: 0.5s;
+  }
+
+.txtglass{
+    background:rgba(255, 255, 255,0.1);
+    outline: none;
+    border-radius: 10px;
+}
+ 
+  .character-amount-container{
+    border-radius: 20px;
+    color: #ffffff;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .btn{
+    position: relative;
+    max-width: 130px;
+    min-height: 50px;
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.btn::before,
+.btn::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 100%;
+    backdrop-filter: blur(15px);
+    background:rgba(255, 255, 255,0.1);
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    z-index: -2;
+}
+
+.btn::after{
+  max-width: 100%;
+  min-height: 90%;
+  top: 25%;
+  left: 4%;
+  z-index: -3;
+  transform: scaleX(0.5);
+  transition: all .6s;
+}
+
+.btn:hover::after{
+    transform: scaleX(1.01) translateY(-15px);
+}
+
+.btn:nth-child(1)::after{
+    background: linear-gradient(135deg, #ffbc00, #ff0058);
+}
+
+#characterAmountNumber{
+    position: relative;
+    max-width: 70px;
+    min-height: 20px;
+    font-size: 1.2rem;
+    background: none;
+    border-bottom: 2px solid red;
+    color: #fff;
+    margin: 30px;
+    cursor: pointer;
+}
+
+
+#characterAmountNumber:focus{
+    position: relative;
+    max-width: 70px;
+    min-height: 20px;
+    font-size: 1.2rem;
+    background: none;
+    border-bottom: 2px solid red;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#characterAmountNumber::before,
+#characterAmountNumber::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 100%;
+    backdrop-filter: blur(15px);
+    background:rgba(255, 255, 255,0.1);
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    z-index: -2;
+}
